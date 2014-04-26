@@ -43,12 +43,12 @@ function return_bytes($val) {
 // stolen somewhere ... please forgive me - i don't know who wrote this .... O-o
 function getpass() {
     $newpass = "";
-    $laenge=10;
+    $length=10;
     $string="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
     mt_srand((double)microtime()*1000000);
 
-    for ($i=1; $i <= $laenge; $i++) {
+    for ($i=1; $i <= $length; $i++) {
         $newpass .= substr($string, mt_rand(0,strlen($string)-1), 1);
     }
 
